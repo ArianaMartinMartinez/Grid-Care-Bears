@@ -1,0 +1,40 @@
+body {
+    margin: 2rem 7rem 2rem 7rem;
+}
+header {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+div, h1 {
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+}
+
+main {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.imgPoster {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.imgRainbow {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+}
+
+.imgBanner {
+    grid-column: 3 / span 3;
+    grid-row-start: 3;
+}
