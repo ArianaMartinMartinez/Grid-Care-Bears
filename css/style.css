@@ -5,22 +5,28 @@ header {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
 }
 
-div, h1 {
+div {
     border: 1px solid black;
 }
 
+.title {
+    text-align: center;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
 img {
-    width: 50%;
+    max-width: 100%;
+    min-height: 100%;
 }
 
 main {
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin-top: 2rem;
 }
 
